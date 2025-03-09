@@ -6,6 +6,10 @@
 
 body {
     font-family: Roboto, serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
 
 .nav-bar,
@@ -16,7 +20,7 @@ body {
 
 .nav-bar {
     display: flex;    
-    padding: 16px 160px;
+    padding: 16px 100px;
     align-items: center;
 }
 
@@ -30,16 +34,50 @@ h1, .logo {
     font-size: 24px;
 }
 
+.responsive-img {
+    width: 600px; 
+    height: 380px;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 10px; 
+  }
+
 h1 {
     font-size: 48px;
 }
 
+h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top:  64px;
+    
+}
+
+h3 {
+    color: white;
+}
+
 .main {
     display: flex;
-    justify-content: space-between;
-    padding: 64px 160px;
+    padding: 64px 100px;
     gap: 32px;
+    flex-wrap: wrap;
+    margin: 0;
+    
+    
+    
+   
 }
+
+.left {
+    flex: 1;
+   
+    
+}
+
+
+
 
 .under {
     color: #8d8d8d;
@@ -49,24 +87,34 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px 160px;
     gap: 64px;
     margin-bottom: 64px;
     
 }
 
 .square {
+    flex: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 60px;
+    flex-wrap: wrap;
+    flex: 1;
     
+}
+
+.container {
+    width: 200px;
+    align-content: center;
+   
 }
 
 .section-three {
     background-color: #e5e7eb;
-    padding: 80px 160px;
+    padding: 80px 100px;
+    
 }
+
 
 
 .quote {
@@ -74,12 +122,14 @@ h1 {
     color: #1f2937;
     font-weight: lighter;
     font-style: italic;
+    padding: 0 100px;
 }
 
 .author {
     font-weight: 900;
     color: #1f2937;
     text-align: right;
+    padding-right: 100px;
     
 }
 
@@ -134,21 +184,19 @@ button {
     margin-top: 8px;
 }
 
-h2 {
-    color: #1f2937;
-    font-size: 36px;
-    font-weight: 900;
-    margin-top:  64px;
-    
+button:hover {
+    background-color:#4070bd
 }
 
-h3 {
-    color: white;
-}
+
 
 footer {
     background-color:#1f2937;
     text-align: center;
     color:#e5e7eb;
     padding: 16px;
+}
+
+img {
+    border-radius: 12px;
 }
